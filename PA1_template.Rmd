@@ -25,7 +25,8 @@ median(aggdata[,2],na.rm=TRUE)
 ```{r}
 # Aggreagate data, steps by interval
 aggdata2<-aggregate(data$steps~data$interval,data=data,FUN=mean,na.rm=T)
-plot(aggdata2,type="l",xlab="5 min intervals", ylab="Steps", main="Average number of steps taken: 5 min interval")
+plot(aggdata2,type="l",xlab="5 min intervals", ylab="Steps", main="Average 
+     number of steps taken: 5 min interval")
 #Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 aggdata2[,1][which.max(aggdata2[,2])]
 ```

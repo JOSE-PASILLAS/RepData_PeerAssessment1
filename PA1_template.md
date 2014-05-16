@@ -46,7 +46,7 @@ median(aggdata[, 2], na.rm = TRUE)
 ```r
 # Aggreagate data, steps by interval
 aggdata2 <- aggregate(data$steps ~ data$interval, data = data, FUN = mean, na.rm = T)
-plot(aggdata2, type = "l", xlab = "5 min intervals", ylab = "Steps", main = "Average number of steps taken: 5 min interval")
+plot(aggdata2, type = "l", xlab = "5 min intervals", ylab = "Steps", main = "Average \n     number of steps taken: 5 min interval")
 ```
 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
